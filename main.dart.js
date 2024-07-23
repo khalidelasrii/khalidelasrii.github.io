@@ -8559,10 +8559,10 @@ _.c=c
 _.d=d
 _.e=e},
 aHc(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0){return new A.en(r,a,a0,k,e,c,l,h,s,b,f,q,p,g,n,i,j,d,m,o)},
-aTE(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g=null,f="documentUrls",e=t.kc,d=e.a(a.h(0,"permis"))
-if(d==null)d=g
-else{d=J.fj(d,new A.aln(),t.N)
-d=A.a_(d,!0,d.$ti.i("at.E"))}if(d==null)d=A.b([],t.s)
+aTE(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g=null,f="dateNaissance",e="documentUrls",d=t.kc,c=d.a(a.h(0,"permis"))
+if(c==null)c=g
+else{c=J.fj(c,new A.aln(),t.N)
+c=A.a_(c,!0,c.$ti.i("at.E"))}if(c==null)c=A.b([],t.s)
 s=a.h(0,"siretEntrepriseSTR")
 if(s==null)s=""
 r=a.h(0,"kbisURL")
@@ -8572,17 +8572,17 @@ p=a.h(0,"rate")!=null?A.i6(a.h(0,"rate")):0
 o=A.aTq(J.cA(a.h(0,"type")))
 n=a.h(0,"address")
 m=a.h(0,"email")
-l=t.y4.a(a.h(0,"dateNaissance"))
+l=a.h(0,f)!=null?A.aDn(t.y4.a(a.h(0,f)).gXj()):g
 k=a.h(0,"description")
-if(a.h(0,f)!=null){j=J.fj(t.j.a(a.h(0,f)),new A.alo(),t.N)
+if(a.h(0,e)!=null){j=J.fj(t.j.a(a.h(0,e)),new A.alo(),t.N)
 j=A.a_(j,!0,j.$ti.i("at.E"))}else j=g
 i=a.h(0,"profilePicUrl")
-e=e.a(a.h(0,"metiers"))
-if(e==null)e=g
-else{e=J.fj(e,new A.alp(),t.N)
-e=A.a_(e,!0,e.$ti.i("at.E"))}if(e==null)e=A.b([],t.s)
+d=d.a(a.h(0,"metiers"))
+if(d==null)d=g
+else{d=J.fj(d,new A.alp(),t.N)
+d=A.a_(d,!0,d.$ti.i("at.E"))}if(d==null)d=A.b([],t.s)
 h=a.h(0,"nomComplet")
-return A.aHc(q,n,m,a.h(0,"cvUrl"),l,k,j,g,r,e,h,g,d,g,a.h(0,"prestatireMode"),i,p,s,o,b)},
+return A.aHc(q,n,m,a.h(0,"cvUrl"),l,k,j,g,r,d,h,g,c,g,a.h(0,"prestatireMode"),i,p,s,o,b)},
 en:function en(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0){var _=this
 _.a=a
 _.b=b
@@ -8724,8 +8724,8 @@ n=A.rs(a.b)
 o.push(A.mz("Account Status",n))
 n=A.akY(s)
 o.push(A.mz("User Type",n))
-n=A.aDn(a.e.gXj()).k(0)
-o.push(A.mz("Date of Birth",n))
+n=a.e
+o.push(A.mz("Date of Birth",n!=null?n.k(0):p))
 n=a.z
 o.push(A.mz("Description",n==null?p:n))
 o.push(A.mz("SIRET",a.a))
